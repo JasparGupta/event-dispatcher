@@ -29,7 +29,7 @@ export default function create<Events extends Record<string, Array<AnyFunction>>
     }
 
     try {
-      return await once(dispatcher, `${event as string}.complete`);
+      return once(dispatcher, `${event as string}.complete`);
     } finally {
       dispatcher.emit(event as string, ...args);
     }
