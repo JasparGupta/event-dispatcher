@@ -1,3 +1,3 @@
-type AnyFunction = (...args: unknown[]) => void;
+type AnyFunction = (...args: any[]) => void;
 
 export default AnyFunction;
