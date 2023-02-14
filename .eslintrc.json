@@ -1,0 +1,3 @@
+{
+  "extends": "@hs-suite/eslint-config-hs-suite"
+}
