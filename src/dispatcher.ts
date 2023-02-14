@@ -26,7 +26,7 @@ export default class Dispatcher<Events extends Record<string, unknown[]>> extend
 
     const result = callback();
 
-    return isPromise(result)
+    return isPromise<T>(result)
       ? result.then(restore) as T
       : restore(result);
   }
@@ -51,7 +51,7 @@ export default class Dispatcher<Events extends Record<string, unknown[]>> extend
 
     const result = callback();
 
-    return isPromise(result)
+    return isPromise<T>(result)
       ? result.then(restore) as T
       : restore(result);
   }
