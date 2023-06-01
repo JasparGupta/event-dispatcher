@@ -46,7 +46,7 @@ export default async function secretParty() {
    * 
    * withoutEvents does the same thing except removes all event listeners.
    */
-  void await dispatch.withoutEvent('party', () => {
+  void await dispatch.withoutEvent('partying', () => {
     return party(false);
   });
 }
