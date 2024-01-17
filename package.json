@@ -13,7 +13,7 @@
     "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
-    "type-fest": "^3.5.7"
+    "type-fest": ">=3.5.7"
   },
   "devDependencies": {
     "@types/node": "^18.13.0",
